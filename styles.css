@@ -1,0 +1,54 @@
+/* ============================================
+   ESTILOS PROPIOS CON CSS3
+   Complementan las clases de Tailwind
+   ============================================ */
+
+/* Fuente general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- HERO (sección de inicio) ---- */
+.hero-section {
+  background-color: #1a1a1a;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1400');
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---- TARJETAS DE SERVICIO ---- */
+.tarjeta-servicio {
+  border-top: 4px solid #fbbf24; /* amber-400 */
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-servicio:hover {
+  transform: translateY(-6px);
+}
+
+/* ---- DISEÑO RESPONSIVO ---- */
+
+/* En pantallas pequeñas (celular) */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
