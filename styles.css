@@ -52,3 +52,8 @@ body {
     font-size: 1rem;
   }
 }
+/* Estilo adicional: color de selección de texto */
+::selection {
+  background-color: #fbbf24;
+  color: #1a1a1a;
+}
